@@ -23,7 +23,7 @@ export const Header = () => {
 				</li>
 				<li>
 					<a
-						href="https://github.com/themashcodee"
+						href="https://github.com/themashcodee/temlist"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-gray-600 hover:text-gray-900"

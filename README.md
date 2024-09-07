@@ -2,7 +2,7 @@
 
 Temlist is a website that provides ready-made message templates for Slack and MS Teams. It offers a collection of professionally crafted templates for various purposes, including welcome messages, introductions, community updates, and surveys.
 
-Website: https://example.com
+Website: https://temlist.vercel.app/
 
 ## Features
 

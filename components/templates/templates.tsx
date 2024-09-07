@@ -60,7 +60,7 @@ export const Templates = () => {
 				<p className="text-center text-sm text-gray-600">
 					Feel free to add more templates by contributing to the project on{" "}
 					<a
-						href="https://github.com/themashcodee"
+						href="https://github.com/themashcodee/temlist"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-blue-600 hover:underline"
