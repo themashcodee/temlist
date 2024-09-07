@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Temlist
 
-## Getting Started
+Temlist is a website that provides ready-made message templates for Slack and MS Teams. It offers a collection of professionally crafted templates for various purposes, including welcome messages, introductions, community updates, and surveys.
 
-First, run the development server:
+Website: https://example.com
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Pre-designed templates for Slack
+- Easy-to-use interface
+- Copy and paste functionality
+- Direct integration with Slack's Block Kit Builder
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Coming Soon
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Microsoft Teams templates
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Feel free to contribute by adding more templates or suggesting improvements. You can open an issue or submit a pull request on GitHub.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For any queries or suggestions, please feel free to reach out:
 
-## Deploy on Vercel
+- Email: codeemash@gmail.com
+- LinkedIn: [themashcodee](https://www.linkedin.com/in/themashcodee)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We value your feedback and are always eager to hear from our users. Don't hesitate to contact us with your thoughts, ideas, or questions about Temlist.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Support
+
+Love my open source work or anything else I do? Treat me to a coffee! 😊
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/themashcodee)
