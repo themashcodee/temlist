@@ -9,18 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.5.4",
+    "next": "14.2.7",
+    "prop-types": "^15.8.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.7"
+    "react-lottie": "^1.2.4",
+    "slack-blocks-to-jsx": "^0.5.7"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-lottie": "^1.2.10",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.7"
+    "typescript": "^5"
   }
 }
