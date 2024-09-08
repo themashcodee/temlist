@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Outfit, Bricolage_Grotesque } from "next/font/google"
 import "./globals.css"
 import "slack-blocks-to-jsx/dist/style.css"
+import { Analytics } from "@vercel/analytics/react"
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] })
 
@@ -17,7 +18,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={font.className}>{children}</body>
+			<body className={font.className}>
+				{children}
+				<Analytics />
+			</body>
 		</html>
 	)
 }
