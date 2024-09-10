@@ -42,34 +42,129 @@ const welcome: Block[][] = [
 	],
 	[
 		{
-			type: "section",
-			text: {
-				type: "mrkdwn",
-				text: "If you have any questions, feel free to ask in the relevant channel or reach out to @hr_team. We're here to help!",
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"🎉 *Welcome to [Workspace Name], <@newuser>!* 🎉\nWe’re so excited to have you here! Feel free to introduce yourself and ask questions.",
+			},
+		},
+	],
+	[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"👋 Hey <@newuser>, welcome to *[Workspace Name]*! We're thrilled to have you. Check out the <#general> channel for updates and our <#resources> channel for tips and tools!",
+			},
+		},
+	],
+	[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"🎉 *Welcome aboard, <@newuser>!* 🎉\nLet’s get the celebration started! Jump into any conversation and say hi!",
 			},
 		},
 		{
-			type: "actions",
-			elements: [
+			"type": "actions",
+			"elements": [
 				{
-					type: "button",
-					text: {
-						type: "plain_text",
-						text: "View Team Directory",
-						emoji: true,
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Introduce Yourself",
+						"emoji": true,
 					},
-					value: "team_directory",
+					"value": "introduce_yourself",
 				},
 				{
-					type: "button",
-					text: {
-						type: "plain_text",
-						text: "Company Handbook",
-						emoji: true,
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Explore Channels",
+						"emoji": true,
 					},
-					value: "company_handbook",
+					"value": "explore_channels",
 				},
 			],
+		},
+	],
+	[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"🙌 Welcome to the team, <@newuser>! We’re happy to have you with us. Jump right into the conversation or ask if you need help!",
+			},
+		},
+	],
+	[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"🚀 *Welcome, <@newuser>!* Tell us a fun fact about yourself or your favorite hobby to break the ice!",
+			},
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Share a Fun Fact",
+						"emoji": true,
+					},
+					"value": "share_fun_fact",
+				},
+			],
+		},
+	],
+	[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"👋 Hey <@newuser>! Welcome to *[Workspace Name]*. We’re glad you’re here. Got questions? Check out our <https://faq-link.com|FAQ> or ask any of us!",
+			},
+		},
+	],
+	[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"🎉 Hi <@newuser>! Welcome to *[Workspace Name]*! Here’s a quick guide to get started: \n• Join our <#random> for fun! \n• Visit <#help> for support.",
+			},
+		},
+	],
+	[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"👋 Welcome, <@newuser>! To break the ice, what’s the most random fact you know? Feel free to share in the chat!",
+			},
+		},
+	],
+	[
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text":
+					"🎉 *Yay, <@newuser> just joined [Workspace Name]!*\nReact with your favorite emoji to give a warm welcome!",
+			},
 		},
 	],
 ]

@@ -56,7 +56,7 @@ export const Templates = () => {
 				</div>
 			</div>
 
-			<div className="fixed left-0 bottom-0 w-full py-1 px-2 bg-white border border-black">
+			<div className="fixed left-0 bottom-0 w-full py-1 px-2 bg-white border border-black z-50">
 				<p className="text-center text-sm text-gray-600">
 					Feel free to add more templates by contributing to the project on{" "}
 					<a
