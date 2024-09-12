@@ -24,6 +24,16 @@ const all_templates = [
 		template,
 		color: "bg-orange-500",
 	})),
+	...templates.events.map((template) => ({
+		type: "Events",
+		template,
+		color: "bg-yellow-500",
+	})),
+	...templates.announcement.map((template) => ({
+		type: "Announcements",
+		template,
+		color: "bg-red-500",
+	})),
 ]
 
 const templateTypes = [...new Set(["All", ...all_templates.map((t) => t.type)])]
