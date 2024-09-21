@@ -1,7 +1,6 @@
-import { images } from "@/images"
-import { div } from "framer-motion/client"
-import Image from "next/image"
 import React from "react"
+import Image from "next/image"
+import { images } from "@/images"
 
 export const Donation = () => {
 	return (
