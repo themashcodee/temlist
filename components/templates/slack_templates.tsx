@@ -9,17 +9,17 @@ const all_templates = [
 		template,
 		color: "bg-blue-500",
 	})),
-	...templates.newMemberIntro.map((template) => ({
+	...templates.new_member_intro.map((template) => ({
 		type: "New Member Intro",
 		template,
 		color: "bg-green-500",
 	})),
-	...templates.teamSurvey.map((template) => ({
+	...templates.team_survey.map((template) => ({
 		type: "Team Survey",
 		template,
 		color: "bg-purple-500",
 	})),
-	...templates.meetingReminder.map((template) => ({
+	...templates.meeting_reminder.map((template) => ({
 		type: "Meeting Reminder",
 		template,
 		color: "bg-orange-500",

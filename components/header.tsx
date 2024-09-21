@@ -1,12 +1,11 @@
 import React from "react"
-import Image from "next/image"
-import { images } from "@/images"
+import { Logo } from "./icons"
 
 export const Header = () => {
 	return (
 		<header className="flex justify-between items-center p-4 border-b h-20 max-w-7xl w-full">
 			<div className="text-2xl font-medium flex items-center gap-2">
-				<Image src={images.logo} alt="logo" width={24} height={24} />
+				<Logo className="w-8" />
 				<span>Temlist</span>
 			</div>
 
