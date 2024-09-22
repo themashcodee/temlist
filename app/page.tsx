@@ -3,6 +3,20 @@ import { Header, Templates } from "@/components"
 export default function Home() {
 	return (
 		<main className="min-h-screen flex flex-col">
+			<div className="w-full py-1 px-2 bg-gray-200">
+				<p className="text-center text-sm">
+					Want to effortlessly render Slack messages in React?{" "}
+					<a
+						href="https://slack-block-to-jsx-playground.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-blue-500 underline"
+					>
+						Open playground
+					</a>
+				</p>
+			</div>
+
 			<div className="flex flex-col bg-[#fff] px-6 items-center">
 				<Header />
 
