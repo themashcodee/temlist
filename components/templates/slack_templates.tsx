@@ -5,34 +5,49 @@ import { motion } from "framer-motion"
 
 const all_templates = [
 	...templates.welcome.map((template) => ({
-		type: "Welcome",
+		type: "⭐ Welcome",
 		template,
-		color: "bg-blue-500",
+		color: "#007bff", // Blue
 	})),
 	...templates.new_member_intro.map((template) => ({
-		type: "New Member Intro",
+		type: "👤 New Member Intro",
 		template,
-		color: "bg-green-500",
+		color: "#28a745", // Green
 	})),
 	...templates.team_survey.map((template) => ({
-		type: "Team Survey",
+		type: "📊 Team Survey",
 		template,
-		color: "bg-purple-500",
+		color: "#6f42c1", // Purple
 	})),
 	...templates.meeting_reminder.map((template) => ({
-		type: "Meeting Reminder",
+		type: "📅 Meeting Reminder",
 		template,
-		color: "bg-orange-500",
+		color: "#fd7e14", // Orange
 	})),
 	...templates.events.map((template) => ({
-		type: "Events",
+		type: "🎉 Events",
 		template,
-		color: "bg-yellow-500",
+		color: "#ffc107", // Yellow
 	})),
 	...templates.announcement.map((template) => ({
-		type: "Announcements",
+		type: "📢 Announcements",
 		template,
-		color: "bg-red-500",
+		color: "#dc3545", // Red
+	})),
+	...templates.farewell.map((template) => ({
+		type: "👋 Farewell",
+		template,
+		color: "#6c757d", // Gray
+	})),
+	...templates.goodbye.map((template) => ({
+		type: "🕊️ Goodbye",
+		template,
+		color: "#ff5733",
+	})),
+	...templates.last_working_day.map((template) => ({
+		type: "🌅 Last Working Day",
+		template,
+		color: "#ffcc00",
 	})),
 ]
 

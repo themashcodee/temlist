@@ -391,6 +391,133 @@ const announcement: Block[][] = [
 	],
 ]
 
+const farewell: Block[][] = [
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Today is a bittersweet day as we say goodbye to <@user>, who has been an amazing part of our team! :wave: We're incredibly grateful for the contributions you've made and the positive energy you've brought.",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "*Here's a quick look back at some of <@user>'s achievements and contributions:*",
+			},
+		},
+		{
+			type: "section",
+			fields: [
+				{
+					type: "mrkdwn",
+					text: "*Projects Completed:* Project A, Project B, Project C",
+				},
+				{
+					type: "mrkdwn",
+					text: "*Key Strengths:* Leadership, Creativity, Team Collaboration",
+				},
+			],
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "We're going to miss you, but we wish you all the success in your next chapter! :tada:",
+			},
+		},
+	],
+]
+
+const goodbye: Block[][] = [
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "It's <@user>'s last day with us today! :sob: We're sad to see you go but excited for your new journey ahead.",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Feel free to drop a message here to wish <@user> good luck and share your favorite memories! :memo:",
+			},
+		},
+	],
+	[
+		{
+			type: "actions",
+			elements: [
+				{
+					type: "button",
+					text: {
+						type: "plain_text",
+						text: "Send Best Wishes",
+						emoji: true,
+					},
+					value: "send_wishes",
+				},
+				{
+					type: "button",
+					text: {
+						type: "plain_text",
+						text: "Share a Memory",
+						emoji: true,
+					},
+					value: "share_memory",
+				},
+			],
+		},
+	],
+]
+
+const last_working_day: Block[][] = [
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: ":wave: As <@user> prepares to leave us today, we'd love to hear your thoughts on what they meant to the team. What will you miss most? Feel free to fill out this quick survey to share your thoughts.",
+			},
+		},
+	],
+	[
+		{
+			type: "actions",
+			elements: [
+				{
+					type: "button",
+					text: {
+						type: "plain_text",
+						text: "Complete Survey",
+						emoji: true,
+					},
+					url: "[Survey URL]",
+					style: "primary",
+				},
+			],
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Thank you, <@user>, for everything you've contributed to our team! :heart:",
+			},
+		},
+	],
+]
+
 export const templates = {
 	welcome,
 	new_member_intro,
@@ -398,4 +525,7 @@ export const templates = {
 	meeting_reminder,
 	events,
 	announcement,
+	farewell,
+	goodbye,
+	last_working_day,
 }
