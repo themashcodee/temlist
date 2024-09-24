@@ -49,13 +49,25 @@ const all_templates = [
 		template,
 		color: "#ffcc00",
 	})),
+	...templates.diversity_n_inclusion.map((template) => ({
+		type: "🌈 Diversity & Inclusion",
+		template,
+		color: "#6f42c1",
+	})),
+	...templates.end_of_year_thank_you_messages.map((template) => ({
+		type: "🎊 Year-End Appreciation",
+		template,
+		color: "#ff8c00",
+	})),
 ]
 
-const templateTypes = [...new Set(["All", ...all_templates.map((t) => t.type)])]
+const templateTypes = [
+	...new Set(["🌏 All", ...all_templates.map((t) => t.type)]),
+]
 
 export const SlackTemplates = () => {
 	const [searchTerm, setSearchTerm] = useState("")
-	const [selectedType, setSelectedType] = useState("All")
+	const [selectedType, setSelectedType] = useState("🌏 All")
 
 	const filteredTemplates = all_templates.filter((template) => {
 		const text_check = template.template.some(
@@ -65,7 +77,7 @@ export const SlackTemplates = () => {
 		)
 
 		return (
-			(selectedType === "All" || template.type === selectedType) &&
+			(selectedType === "🌏 All" || template.type === selectedType) &&
 			(searchTerm === "" ||
 				template.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
 				text_check)
@@ -85,7 +97,7 @@ export const SlackTemplates = () => {
 
 				<div className="relative">
 					<select
-						className="h-10 rounded-md w-full sm:w-auto border bg-white px-4 pr-8 focus:outline-black appearance-none"
+						className="h-10 rounded-md w-full sm:w-64 border bg-white px-4 pr-8 focus:outline-black appearance-none"
 						value={selectedType}
 						onChange={(e) => setSelectedType(e.target.value)}
 					>

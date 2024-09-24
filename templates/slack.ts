@@ -518,6 +518,224 @@ const last_working_day: Block[][] = [
 	],
 ]
 
+const diversity_n_inclusion: Block[][] = [
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: ":rainbow: *Diversity Week is here!* This week, we're celebrating the unique backgrounds, cultures, and perspectives that each of us brings to the table. Let's embrace our differences and learn from one another.",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "We encourage everyone to share a story, experience, or fun fact about your culture in the <#diversity-and-inclusion> channel. :speech_balloon:",
+			},
+		},
+	],
+	[
+		{
+			type: "actions",
+			elements: [
+				{
+					type: "button",
+					text: {
+						type: "plain_text",
+						text: "Share Your Story",
+						emoji: true,
+					},
+					value: "share_story",
+				},
+			],
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: ":star2: *Inclusion Spotlight:* We're committed to creating an environment where everyone feels valued and heard. This week, we want to highlight stories of how our team members make each other feel included.",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Do you have a moment when a colleague went out of their way to make you feel welcome? Share it with us! :raised_hands:",
+			},
+		},
+	],
+	[
+		{
+			type: "actions",
+			elements: [
+				{
+					type: "button",
+					text: {
+						type: "plain_text",
+						text: "Share Your Experience",
+						emoji: true,
+					},
+					value: "share_experience",
+				},
+			],
+		},
+	],
+
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: ":books: *Join our Diversity & Inclusion Learning Session!* We're hosting an interactive session to learn more about the importance of diversity and how we can all contribute to a more inclusive workplace.",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			fields: [
+				{
+					type: "mrkdwn",
+					text: "*Date:* [Session Date]",
+				},
+				{
+					type: "mrkdwn",
+					text: "*Time:* [Session Time]",
+				},
+				{
+					type: "mrkdwn",
+					text: "*Location:* [Meeting Room/Online Link]",
+				},
+			],
+		},
+	],
+	[
+		{
+			type: "actions",
+			elements: [
+				{
+					type: "button",
+					text: {
+						type: "plain_text",
+						text: "Register Now",
+						emoji: true,
+					},
+					url: "[Registration Link]",
+					style: "primary",
+				},
+			],
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: ":earth_africa: *Cultural Celebrations Alert!* We want to celebrate the diverse holidays and traditions of our team members. This month, we're highlighting [Holiday Name] and inviting everyone to learn about its significance.",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "If you celebrate this holiday or have insights to share, feel free to drop a message in <#culture-channel>. Let's enrich our knowledge together! :sparkles:",
+			},
+		},
+	],
+]
+
+const end_of_year_thank_you_messages: Block[][] = [
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "🎉 *As we wrap up this year, we want to extend a heartfelt thank you to each one of you!* Your dedication, hard work, and passion have made this year a remarkable success. We couldn’t have done it without you!",
+			},
+		},
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Here’s to the achievements we’ve accomplished together and the new heights we'll reach in the coming year. Happy Holidays and a Happy New Year! :sparkles:",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "✨ *Thank you for an amazing year, team!* Your efforts, teamwork, and unwavering spirit have driven us forward, and we couldn’t be more proud of what we’ve achieved together.",
+			},
+		},
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Wishing you all a wonderful holiday season filled with joy, relaxation, and time spent with loved ones. Let’s make next year even more extraordinary! 🎆",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "🌟 *Thank you, team, for all your hard work and dedication this year!* It’s been a year of growth, challenges, and incredible achievements, and each of you has played a crucial role in our journey.",
+			},
+		},
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Take this time to relax, recharge, and celebrate all that we’ve accomplished. Here’s to a bright and prosperous new year ahead! 🥂",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "🎊 *As the year comes to a close, we want to say a big thank you for your hard work, resilience, and contributions.* Every success we’ve achieved this year has been made possible by your dedication and teamwork.",
+			},
+		},
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Wishing you a restful holiday season and a Happy New Year. Here’s to new opportunities, goals, and achievements in the coming year! 🎇",
+			},
+		},
+	],
+	[
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "💫 *Thank you all for your amazing efforts this year!* It’s been a year full of challenges, and your commitment has made all the difference. Together, we’ve reached incredible milestones, and we couldn’t be prouder.",
+			},
+		},
+		{
+			type: "section",
+			text: {
+				type: "mrkdwn",
+				text: "Enjoy the holiday season with your loved ones, and let’s come back refreshed and ready to make the next year even more successful! 🌟",
+			},
+		},
+	],
+]
+
 export const templates = {
 	welcome,
 	new_member_intro,
@@ -528,4 +746,6 @@ export const templates = {
 	farewell,
 	goodbye,
 	last_working_day,
+	diversity_n_inclusion,
+	end_of_year_thank_you_messages,
 }
