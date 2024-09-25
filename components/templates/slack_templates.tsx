@@ -8,56 +8,155 @@ const all_templates = [
 		type: "⭐ Welcome",
 		template,
 		color: "#007bff", // Blue
+		keywords: [
+			"welcome",
+			"greeting",
+			"introduction",
+			"newcomer",
+			"onboarding",
+			"hello",
+			"start",
+		],
 	})),
 	...templates.new_member_intro.map((template) => ({
 		type: "👤 New Member Intro",
 		template,
 		color: "#28a745", // Green
+		keywords: [
+			"new member",
+			"introduction",
+			"welcome",
+			"team",
+			"greeting",
+			"join",
+			"member",
+		],
 	})),
 	...templates.team_survey.map((template) => ({
 		type: "📊 Team Survey",
 		template,
 		color: "#6f42c1", // Purple
+		keywords: [
+			"survey",
+			"feedback",
+			"team",
+			"opinions",
+			"input",
+			"assessment",
+			"questionnaire",
+		],
 	})),
 	...templates.meeting_reminder.map((template) => ({
 		type: "📅 Meeting Reminder",
 		template,
 		color: "#fd7e14", // Orange
+		keywords: [
+			"meeting",
+			"reminder",
+			"schedule",
+			"appointment",
+			"event",
+			"calendar",
+			"notification",
+		],
 	})),
 	...templates.events.map((template) => ({
 		type: "🎉 Events",
 		template,
 		color: "#ffc107", // Yellow
+		keywords: [
+			"event",
+			"celebration",
+			"activity",
+			"gathering",
+			"function",
+			"party",
+			"occasion",
+		],
 	})),
 	...templates.announcement.map((template) => ({
 		type: "📢 Announcements",
 		template,
 		color: "#dc3545", // Red
+		keywords: [
+			"announcement",
+			"news",
+			"update",
+			"notification",
+			"bulletin",
+			"information",
+			"alert",
+		],
 	})),
 	...templates.farewell.map((template) => ({
 		type: "👋 Farewell",
 		template,
 		color: "#6c757d", // Gray
+		keywords: [
+			"farewell",
+			"goodbye",
+			"parting",
+			"send-off",
+			"leave",
+			"exit",
+			"departure",
+		],
 	})),
 	...templates.goodbye.map((template) => ({
 		type: "🕊️ Goodbye",
 		template,
 		color: "#ff5733",
+		keywords: [
+			"goodbye",
+			"farewell",
+			"leave",
+			"parting",
+			"exit",
+			"send-off",
+			"adieu",
+		],
 	})),
 	...templates.last_working_day.map((template) => ({
 		type: "🌅 Last Working Day",
 		template,
 		color: "#ffcc00",
+		keywords: [
+			"last day",
+			"farewell",
+			"goodbye",
+			"departure",
+			"final day",
+			"exit",
+			"transition",
+		],
 	})),
 	...templates.diversity_n_inclusion.map((template) => ({
 		type: "🌈 Diversity & Inclusion",
 		template,
 		color: "#6f42c1",
+		keywords: [
+			"diversity",
+			"inclusion",
+			"culture",
+			"equality",
+			"representation",
+			"community",
+			"belonging",
+		],
 	})),
 	...templates.end_of_year_thank_you_messages.map((template) => ({
 		type: "🎊 Year-End Appreciation",
 		template,
 		color: "#ff8c00",
+		keywords: [
+			"thank you",
+			"appreciation",
+			"year-end",
+			"gratitude",
+			"celebration",
+			"reflection",
+			"closure",
+		],
 	})),
 ]
 
@@ -70,17 +169,26 @@ export const SlackTemplates = () => {
 	const [selectedType, setSelectedType] = useState("🌏 All")
 
 	const filteredTemplates = all_templates.filter((template) => {
-		const text_check = template.template.some(
-			(block) =>
-				block.type === "section" &&
-				block.text?.text.toLowerCase().includes(searchTerm.toLowerCase())
-		)
+		const search_keyword = searchTerm.toLowerCase()
+
+		const text_check = template.template.some((block) => {
+			if (!search_keyword) return false
+			const block_str = JSON.stringify(block)
+			return (
+				block_str.toLowerCase().includes(search_keyword) ||
+				template.type.toLowerCase().includes(search_keyword) ||
+				template.keywords.some((keyword) => {
+					return (
+						keyword.toLowerCase().includes(search_keyword) ||
+						search_keyword.includes(keyword.toLowerCase())
+					)
+				})
+			)
+		})
 
 		return (
 			(selectedType === "🌏 All" || template.type === selectedType) &&
-			(searchTerm === "" ||
-				template.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
-				text_check)
+			(searchTerm === "" || text_check)
 		)
 	})
 

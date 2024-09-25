@@ -748,4 +748,5 @@ export const templates = {
 	last_working_day,
 	diversity_n_inclusion,
 	end_of_year_thank_you_messages,
+	// promotion congrats
 }
